@@ -32,7 +32,7 @@ struct HomeView: View {
                             .foregroundColor(.orange)
                             .opacity(self.recipeListViewModel.dataEditorChoiceIsLoading ? 1.0 : 0.0)
                     } else {
-                         RecipeRowView(categoryName: "Editor's Choice", recipes: recipeListViewModel.editorRecipesData)
+                         RecipeRowView(categoryName: "Editor's Choice Test", recipes: recipeListViewModel.editorRecipesData)
                         
                     }
                     

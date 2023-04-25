@@ -13,28 +13,27 @@ struct AppView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
+                    Image("home")
             }
             SearchView()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
+                    Image("search")
             }
             FavoritesView()
                 .tabItem {
-                    Image(systemName: "bookmark")
-                    Text("Favorites")
+                    VStack{
+                        Image("upload_icon")
+                            .padding(.top, 10)
+                        Spacer()
+                    }
             }
             ShoppingListView()
                 .tabItem {
-                    Image(systemName: "cart.badge.plus")
-                    Text("Shopping List")
+                    Image("Comment")
             }
             SettingsView()
                 .tabItem {
-                    Image(systemName: "gear")
-                    Text("Settings")
+                    Image("bell")
             }
         }
     }

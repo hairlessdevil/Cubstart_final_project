@@ -30,7 +30,7 @@
 		532758D5246BEAC30013F639 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532758D4246BEAC30013F639 /* CheckboxView.swift */; };
 		532758D7246BF98E0013F639 /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532758D6246BF98E0013F639 /* ShoppingListView.swift */; };
 		532758DB246C0B780013F639 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532758DA246C0B780013F639 /* Config.swift */; };
-		532758E1246C0C6B0013F639 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532758E0246C0C6B0013F639 /* FavoritesView.swift */; };
+		532758E1246C0C6B0013F639 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532758E0246C0C6B0013F639 /* UploadView.swift */; };
 		532758E3246C19F10013F639 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532758E2246C19F10013F639 /* FavoriteViewModel.swift */; };
 		538A8A3724729436005BC7A1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A8A3624729436005BC7A1 /* ActivityIndicator.swift */; };
 		538A8A3C2472C8C4005BC7A1 /* NutritionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A8A3B2472C8C4005BC7A1 /* NutritionalView.swift */; };
@@ -72,7 +72,7 @@
 		532758D4246BEAC30013F639 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
 		532758D6246BF98E0013F639 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		532758DA246C0B780013F639 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		532758E0246C0C6B0013F639 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		532758E0246C0C6B0013F639 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		532758E2246C19F10013F639 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		538A8A3624729436005BC7A1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		538A8A3B2472C8C4005BC7A1 /* NutritionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalView.swift; sourceTree = "<group>"; };
@@ -85,9 +85,9 @@
 		53FE0D24246C49C0007847C0 /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
 		53FE0D26246D3D44007847C0 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
 		53FE0D28246D4376007847C0 /* ShoppingIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingIngredientsView.swift; sourceTree = "<group>"; };
-		6E64EF3725D589B500D65ED9 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Recipe App.app"; path = "/Users/mt/Desktop/software_development/Projects/Libraries/RecipeApp/build/Debug-iphoneos/Recipe App.app"; sourceTree = "<absolute>"; };
 		6E8A5C4B25D5819E00AA1C75 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		6E8A5C5025D582BF00AA1C75 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		EC32EBD429F85B4B00F13322 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				5306956D24694D8C0039AD41 /* RecipeApp */,
+				EC32EBD429F85B4B00F13322 /* Recipe App.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,7 +141,7 @@
 				5306958624695A720039AD41 /* AppView.swift */,
 				532758DD246C0B950013F639 /* Home */,
 				531D4BA9258396B00073C2AF /* Search */,
-				532758DF246C0C550013F639 /* Favorites */,
+				532758DF246C0C550013F639 /* Upload */,
 				532758DE246C0B9A0013F639 /* ShoppingList */,
 				532758DC246C0B8C0013F639 /* Settings */,
 				532758D3246BEA730013F639 /* Support */,
@@ -245,12 +246,12 @@
 			path = ShoppingList;
 			sourceTree = "<group>";
 		};
-		532758DF246C0C550013F639 /* Favorites */ = {
+		532758DF246C0C550013F639 /* Upload */ = {
 			isa = PBXGroup;
 			children = (
-				532758E0246C0C6B0013F639 /* FavoritesView.swift */,
+				532758E0246C0C6B0013F639 /* UploadView.swift */,
 			);
-			path = Favorites;
+			path = Upload;
 			sourceTree = "<group>";
 		};
 		538A8A452472ED89005BC7A1 /* Recipe */ = {
@@ -293,7 +294,7 @@
 			packageProductDependencies = (
 			);
 			productName = RecipeApp;
-			productReference = 6E64EF3725D589B500D65ED9 /* Recipe App.app */;
+			productReference = EC32EBD429F85B4B00F13322 /* Recipe App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -370,7 +371,7 @@
 				538A8A3C2472C8C4005BC7A1 /* NutritionalView.swift in Sources */,
 				538A8A442472E24F005BC7A1 /* RecipeIngredientsView.swift in Sources */,
 				53FE0D21246C4251007847C0 /* Keys.swift in Sources */,
-				532758E1246C0C6B0013F639 /* FavoritesView.swift in Sources */,
+				532758E1246C0C6B0013F639 /* UploadView.swift in Sources */,
 				531D4BAF258396F60073C2AF /* SearchBarView.swift in Sources */,
 				5306959424696AE70039AD41 /* RecipeRatingView.swift in Sources */,
 				530695922469698E0039AD41 /* RecipeCardView.swift in Sources */,
@@ -527,6 +528,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RecipeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,6 +552,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RecipeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

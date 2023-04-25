@@ -19,7 +19,7 @@ struct AppView: View {
                 .tabItem {
                     Image("search")
             }
-            FavoritesView()
+            UploadView()
                 .tabItem {
                     VStack{
                         Image("upload_icon")

@@ -31,7 +31,8 @@ struct AppView: View {
                 .tabItem {
                     Image("Comment")
             }
-            SettingsView()
+            AccountTabView()
+                .environmentObject(accountViewModel())
                 .tabItem {
                     Image("bell")
             }

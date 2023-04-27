@@ -25,6 +25,7 @@ final class accountViewModel: ObservableObject {
     func readAllData() {
 
 //        self.dataIsLoading = true
+        self.dataAccountIsLoading = true
 
         self.accountData = []
 
@@ -50,7 +51,7 @@ final class accountViewModel: ObservableObject {
 //            }
         }
 
-//        self.dataIsLoading = false
+        self.dataAccountIsLoading = false
     }
 
 }

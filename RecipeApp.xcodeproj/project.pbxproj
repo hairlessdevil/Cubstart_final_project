@@ -48,6 +48,7 @@
 		A83B3FBE29FA1C0400033DFB /* AccountTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B3FBD29FA1C0400033DFB /* AccountTabView.swift */; };
 		A83B3FC029FA20D600033DFB /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B3FBF29FA20D600033DFB /* AccountViewModel.swift */; };
 		A83B3FC229FA215800033DFB /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B3FC129FA215800033DFB /* AccountModel.swift */; };
+		A83B3FC429FA4AD800033DFB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83B3FC329FA4AD800033DFB /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		A83B3FBD29FA1C0400033DFB /* AccountTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTabView.swift; sourceTree = "<group>"; };
 		A83B3FBF29FA20D600033DFB /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		A83B3FC129FA215800033DFB /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		A83B3FC329FA4AD800033DFB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EC32EBD429F85B4B00F13322 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				5306958624695A720039AD41 /* AppView.swift */,
+				A83B3FC329FA4AD800033DFB /* LoginView.swift */,
 				532758DD246C0B950013F639 /* Home */,
 				531D4BA9258396B00073C2AF /* Search */,
 				532758DF246C0C550013F639 /* Upload */,
@@ -395,6 +398,7 @@
 				A83B3FC029FA20D600033DFB /* AccountViewModel.swift in Sources */,
 				531D4BB2258397210073C2AF /* SearchViewModel.swift in Sources */,
 				5306958924695A7F0039AD41 /* HomeView.swift in Sources */,
+				A83B3FC429FA4AD800033DFB /* LoginView.swift in Sources */,
 				538A8A422472E013005BC7A1 /* InstructionsView.swift in Sources */,
 				5306959E24697A400039AD41 /* HeaderView.swift in Sources */,
 			);

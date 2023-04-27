@@ -323,4 +323,96 @@ let sampleRecipes: [Recipe] = [
     )
 ]
 
+let sampleAccounts: [Account] = [
+    Account(
+        name: "Jane",
+        followers: 1394,
+        recipeCount: 2,
+        recipes: [
+            Recipe(
+            title: "Baked Shrimp Scampi",
+            comments: "Modified by reducing butter and salt.  Substituted frozen shrimp instead of fresh 12-15 count (butterflied, tails on).",
+            calories: 2565,
+            fat: 159,
+            satfat: 67,
+            carbs: 76,
+            fiber: 4,
+            sugar: 6,
+            protein: 200,
+            image: "food-1",
+            rating: 5,
+            serves: 4,
+            preparation: 20,
+            cooking: 0,
+            instructions: [
+              "Preheat the oven to 425 degrees F.",
+              "Defrost shrimp by putting in cold water, drain. Place the shrimp in serving dish (9x13 or 2 quart casserole) and toss gently with the olive oil, wine, 1 teaspoons salt, and 1 teaspoon pepper. Allow to sit at room temperature while you make the butter and garlic mixture.",
+              "In a small bowl, mash the softened butter with the garlic, shallots, parsley, rosemary, red pepper flakes, lemon zest, lemon juice, egg yolk, panko, 1/2 teaspoon salt, and 1/4 teaspoon of pepper until combined.",
+              "Spread the butter mixture evenly over the shrimp. Bake for 10 to 12 minutes until hot and bubbly. If you like the top browned, place under a broiler for 1-3 minutes (keep an eye on it). Serve with lemon wedges and French bread.",
+              "Note: if using fresh shrimp, arrange for presentation. Starting from the outer edge of a 14-inch oval gratin dish, arrange the shrimp in a single layer cut side down with the tails curling up and towards the center of the dish. Pour the remaining marinade over the shrimp. ",
+            ],
+            ingredients: [
+              "2/3 cup panko",
+              "1/4 teaspoon red pepper flakes",
+              "1/2 lemon, zested and juiced",
+              "1 extra-large egg yolk",
+              "1 teaspoon rosemary, minced",
+              "3 tablespoon parsley, minced",
+              "4 clove garlic, minced",
+              "1/4 cup shallots, minced",
+              "8 tablespoon unsalted butter, at room temperature",
+              "2 tablespoon dry white wine",
+              "Freshly ground black pepper",
+              "Kosher salt",
+              "3 tablespoon olive oil",
+              "2 pound frozen shrimp"
+            ],
+            isEditorChoice: true,
+            isTrending: false
+          ),
+          Recipe(
+            title: "Strawberries Romanov (La Madeleine copycat)",
+            comments: "",
+            calories: 123,
+            fat: 22,
+            satfat: 12,
+            carbs: 0,
+            fiber: 34,
+            sugar: 12,
+            protein: 2,
+            image: "food-2",
+            rating: 3,
+            serves: 4,
+            preparation: 30,
+            cooking: 110,
+            instructions: [
+              "Wash strawberries and cut the tops off.",
+              "Let strawberries drain.",
+              "Mix together heavy whipping cream, powdered sugar, and the brandy.",
+              "Beat with a mixer till this becomes thick.",
+              "Place strawberries into glasses and spoon over the sauce."
+            ],
+            ingredients: [
+              "2 tbsp powdered sugar",
+              "1/2 pt heavy whipping cream",
+              "1 lb strawberries, (2 pints)",
+              "4 tbsp brandy"
+            ],
+            isEditorChoice: true,
+            isTrending: true
+          )
+        ],
+        profilePicture: "Jane",
+        isUser: true
+        ),
+    Account(
+        name: "Gio",
+        followers: 1204,
+        recipeCount: 1,
+        recipes: [sampleRecipes[2]
+                 ],
+        profilePicture: "Gio",
+        isUser: false
+            ),
+    ]
 

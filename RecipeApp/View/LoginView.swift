@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
     
     @State private var email: String = ""
     @State private var password: String = ""
@@ -9,7 +9,7 @@ struct ContentView: View {
     var body: some View {
         if isLoggedIn {
             // Add your main app view here
-            Text("Welcome to FoodiZone!")
+            //Text("Welcome to FoodiZone!")
         } else {
             VStack {
                 Spacer()
@@ -37,6 +37,7 @@ struct ContentView: View {
                         // Check login credentials here
                         if email == "user@example.com" && password == "password" {
                             isLoggedIn = true
+                            
                         }
                     }) {
                         Text("Log In")
@@ -64,8 +65,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }

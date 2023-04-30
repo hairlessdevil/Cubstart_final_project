@@ -12,6 +12,7 @@ import SwiftUI
 
 struct Recipe: Identifiable, Codable, Equatable {
     var id = UUID()
+    //var author: Account
     var title: String
     var comments: String
     var calories: Int

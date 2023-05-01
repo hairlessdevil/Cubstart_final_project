@@ -12,13 +12,6 @@ let sampleRecipes: [Recipe] = [
     Recipe(
       title: "Baked Shrimp Scampi",
       comments: "Modified by reducing butter and salt.  Substituted frozen shrimp instead of fresh 12-15 count (butterflied, tails on).",
-      calories: 2565,
-      fat: 159,
-      satfat: 67,
-      carbs: 76,
-      fiber: 4,
-      sugar: 6,
-      protein: 200,
       image: "food-1",
       rating: 5,
       serves: 4,
@@ -47,19 +40,11 @@ let sampleRecipes: [Recipe] = [
         "3 tablespoon olive oil",
         "2 pound frozen shrimp"
       ],
-      isEditorChoice: true,
-      isTrending: false
+      isEditorChoice: true
     ),
     Recipe(
       title: "Strawberries Romanov (La Madeleine copycat)",
       comments: "",
-      calories: 123,
-      fat: 22,
-      satfat: 12,
-      carbs: 0,
-      fiber: 34,
-      sugar: 12,
-      protein: 2,
       image: "food-2",
       rating: 3,
       serves: 4,
@@ -78,19 +63,11 @@ let sampleRecipes: [Recipe] = [
         "1 lb strawberries, (2 pints)",
         "4 tbsp brandy"
       ],
-      isEditorChoice: true,
-      isTrending: true
+      isEditorChoice: true
     ),
     Recipe(
       title: "Tomato Basil Soup (La Madeleine copycat)",
       comments: "",
-      calories: 231,
-      fat: 23,
-      satfat: 45,
-      carbs: 12,
-      fiber: 23,
-      sugar: 1,
-      protein: 32,
       image: "food-3",
       rating: 4,
       serves: 2,
@@ -111,19 +88,11 @@ let sampleRecipes: [Recipe] = [
         "Salt",
         "1/4 tsp black pepper"
       ],
-      isEditorChoice: false,
-      isTrending: false
+      isEditorChoice: false
     ),
     Recipe(
       title: "John Thorne's Pecan Pie",
       comments: "Does not use corn syrup",
-      calories: 542,
-      fat: 123,
-      satfat: 56,
-      carbs: 212,
-      fiber: 9,
-      sugar: 59,
-      protein: 83,
       image: "food-4",
       rating: 5,
       serves: 6,
@@ -149,19 +118,11 @@ let sampleRecipes: [Recipe] = [
         "2 cup pecans, chopped ",
         "9-inch unbaked pie shell"
       ],
-      isEditorChoice: true,
-      isTrending: false
+      isEditorChoice: true
     ),
     Recipe(
       title: "Smoked Salmon Ebelskivers",
       comments: "If dill is not available, add 1 tsp of Old Bay seasoning to the batter in place of the salt and pepper.",
-      calories: 1200,
-      fat: 300,
-      satfat: 23,
-      carbs: 5,
-      fiber: 90,
-      sugar: 150,
-      protein: 200,
       image: "food-5",
       rating: 5,
       serves: 4,
@@ -193,19 +154,11 @@ let sampleRecipes: [Recipe] = [
         "3 1/2 tbsp smoked salmon, minced (about 4 oz)",
         "3 1/2 tbsp whipped-style cream cheese, at room temperature",
       ],
-      isEditorChoice: false,
-      isTrending: true
+      isEditorChoice: false
     ),
     Recipe(
       title: "Godiva Angel Pie",
       comments: "",
-      calories: 232,
-      fat: 1,
-      satfat: 0,
-      carbs: 0,
-      fiber: 95,
-      sugar: 3,
-      protein: 78,
       image: "food-6",
       rating: 5,
       serves: 6,
@@ -233,19 +186,11 @@ let sampleRecipes: [Recipe] = [
         "1 tsp vanilla",
         "1 cup heavy cream, whipped"
       ],
-      isEditorChoice: true,
-      isTrending: true
+      isEditorChoice: true
     ),
     Recipe(
       title: "Spaetzle",
       comments: "Dough recipe from Emeril, sauce recipe from Guy Fieri",
-      calories: 56,
-      fat: 3,
-      satfat: 2,
-      carbs: 0,
-      fiber: 0,
-      sugar: 5,
-      protein: 0,
       image: "food-7",
       rating: 2,
       serves: 2,
@@ -273,19 +218,11 @@ let sampleRecipes: [Recipe] = [
         "2 tablespoon finely grated Parmesan, plus extra for garnish",
         "Salt and freshly ground black pepper"
       ],
-      isEditorChoice: true,
-      isTrending: false
+      isEditorChoice: true
     ),
     Recipe(
       title: "Pot Roast Carbonnade",
       comments: "I like to serve this over mashed potatoes.",
-      calories: 400,
-      fat: 20,
-      satfat: 20,
-      carbs: 40,
-      fiber: 10,
-      sugar: 0,
-      protein: 150,
       image: "food-8",
       rating: 5,
       serves: 6,
@@ -318,8 +255,7 @@ let sampleRecipes: [Recipe] = [
         "1 tablespoon dried thyme",
         "1 cup beef stock"
       ],
-      isEditorChoice: false,
-      isTrending: true
+      isEditorChoice: false
     )
 ]
 
@@ -332,13 +268,6 @@ let sampleAccounts: [Account] = [
             Recipe(
             title: "Baked Shrimp Scampi",
             comments: "Modified by reducing butter and salt.  Substituted frozen shrimp instead of fresh 12-15 count (butterflied, tails on).",
-            calories: 2565,
-            fat: 159,
-            satfat: 67,
-            carbs: 76,
-            fiber: 4,
-            sugar: 6,
-            protein: 200,
             image: "food-1",
             rating: 5,
             serves: 4,
@@ -367,19 +296,11 @@ let sampleAccounts: [Account] = [
               "3 tablespoon olive oil",
               "2 pound frozen shrimp"
             ],
-            isEditorChoice: true,
-            isTrending: false
+            isEditorChoice: true
           ),
           Recipe(
             title: "Strawberries Romanov (La Madeleine copycat)",
             comments: "",
-            calories: 123,
-            fat: 22,
-            satfat: 12,
-            carbs: 0,
-            fiber: 34,
-            sugar: 12,
-            protein: 2,
             image: "food-2",
             rating: 3,
             serves: 4,
@@ -398,8 +319,7 @@ let sampleAccounts: [Account] = [
               "1 lb strawberries, (2 pints)",
               "4 tbsp brandy"
             ],
-            isEditorChoice: true,
-            isTrending: true
+            isEditorChoice: true
           )
         ],
         profilePicture: "Jane",

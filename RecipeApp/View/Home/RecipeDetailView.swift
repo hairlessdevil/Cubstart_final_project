@@ -72,7 +72,7 @@ struct RecipeDetailView: View {
                         .padding(.top, 10)
                         
                     // HEADING
-                    RecipeRatingView(recipe: recipe)
+                    //RecipeRatingView(recipe: recipe)
                     
                     // COOKING
                     RecipeCookingView(recipe: recipe)
@@ -81,7 +81,7 @@ struct RecipeDetailView: View {
                     RecipeIngredientsView(recipe: recipe)
 
                     // NUTRITIONAL VALUES
-                    NutritionalView(recipe: recipe)
+                    //NutritionalView(recipe: recipe)
                                        
                     // INSTRUCTIONS
                     InstructionsView(instructions: recipe.instructions, recipe: recipe)

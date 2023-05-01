@@ -33,15 +33,6 @@ struct HomeView: View {
                             .opacity(self.recipeListViewModel.dataEditorChoiceIsLoading ? 1.0 : 0.0)
                     } else {
                          RecipeRowView(categoryName: "Editor's Choice", recipes: recipeListViewModel.editorRecipesData)
-                        
-                    }
-                    
-                    if self.recipeListViewModel.dataTrendingIsLoading {
-                        ActivityIndicator()
-                           .frame(width:30, height: 30)
-                           .foregroundColor(.orange)
-                    } else {
-                        RecipeRowView(categoryName: "Trending", recipes: recipeListViewModel.trendingRecipesData)
                     }
                     
                     

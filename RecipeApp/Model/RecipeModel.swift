@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 // MARK: - RECIPE MODEL
 
@@ -15,13 +16,6 @@ struct Recipe: Identifiable, Codable, Equatable {
     //var author: Account
     var title: String
     var comments: String
-    var calories: Int
-    var fat: Int
-    var satfat: Int
-    var carbs: Int
-    var fiber: Int
-    var sugar: Int
-    var protein: Int
     var image: String
     var rating: Int
     var serves: Int
@@ -30,5 +24,18 @@ struct Recipe: Identifiable, Codable, Equatable {
     var instructions: [String]
     var ingredients: [String]
     var isEditorChoice: Bool
-    var isTrending: Bool
+    
+    enum CodingKeys: String, CodingKey{
+        case id
+        case title
+        case comments
+        case image
+        case rating
+        case serves
+        case preparation
+        case cooking
+        case instructions
+        case ingredients
+        case isEditorChoice
+    }
 }

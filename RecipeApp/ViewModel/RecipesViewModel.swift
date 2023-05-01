@@ -42,10 +42,6 @@ final class RecipeListViewModel: ObservableObject {
             if recipe.isEditorChoice {
                 self.editorRecipesData.append(recipe)
             }
-            // Add trendings's list if flag true
-            if recipe.isTrending {
-                self.trendingRecipesData.append(recipe)
-            }
         }
         
         self.dataIsLoading = false

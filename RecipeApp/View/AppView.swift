@@ -9,13 +9,14 @@
 import SwiftUI
 import Firebase
 import FirebaseCore
-
+import UIKit
 
 struct AppView: View {
     
     @State var email = ""
     @State var password = ""
     @State var loggedIn = false
+    @State var presentSheet = false
     //TODO: add a variable that tracks whether the user has successfully logged in or not
     
     init() {
@@ -70,9 +71,13 @@ struct AppView: View {
                     }
                 }.padding(.horizontal)
                 Spacer()
-                Text("Don't have an account? Sign up")
-                    .foregroundColor(.green)
-                    .padding(.bottom, 20)
+                Button(action: {presentSheet.toggle()}){
+                    Text("Don't have an account? Sign up")
+                        .foregroundColor(.green)
+                        .padding(.bottom, 20)
+                }.sheet(isPresented: $presentSheet){
+                    Text("try to create user")
+                }
             }
         }
         else{

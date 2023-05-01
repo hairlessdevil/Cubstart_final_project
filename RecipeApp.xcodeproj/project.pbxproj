@@ -33,8 +33,6 @@
 		532758E1246C0C6B0013F639 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532758E0246C0C6B0013F639 /* UploadView.swift */; };
 		532758E3246C19F10013F639 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532758E2246C19F10013F639 /* FavoriteViewModel.swift */; };
 		538A8A3724729436005BC7A1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A8A3624729436005BC7A1 /* ActivityIndicator.swift */; };
-		538A8A3C2472C8C4005BC7A1 /* NutritionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A8A3B2472C8C4005BC7A1 /* NutritionalView.swift */; };
-		538A8A3E2472D27D005BC7A1 /* NutritionalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A8A3D2472D27D005BC7A1 /* NutritionalItemView.swift */; };
 		538A8A422472E013005BC7A1 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A8A412472E013005BC7A1 /* InstructionsView.swift */; };
 		538A8A442472E24F005BC7A1 /* RecipeIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A8A432472E24F005BC7A1 /* RecipeIngredientsView.swift */; };
 		53CD526B2473FD79002368D9 /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD526A2473FD79002368D9 /* ImageLoaderView.swift */; };
@@ -107,8 +105,6 @@
 		532758E0246C0C6B0013F639 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		532758E2246C19F10013F639 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		538A8A3624729436005BC7A1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		538A8A3B2472C8C4005BC7A1 /* NutritionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalView.swift; sourceTree = "<group>"; };
-		538A8A3D2472D27D005BC7A1 /* NutritionalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalItemView.swift; sourceTree = "<group>"; };
 		538A8A412472E013005BC7A1 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		538A8A432472E24F005BC7A1 /* RecipeIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientsView.swift; sourceTree = "<group>"; };
 		53CD526A2473FD79002368D9 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
@@ -329,8 +325,6 @@
 				5306959324696AE70039AD41 /* RecipeRatingView.swift */,
 				5306959524696B220039AD41 /* RecipeCookingView.swift */,
 				538A8A432472E24F005BC7A1 /* RecipeIngredientsView.swift */,
-				538A8A3B2472C8C4005BC7A1 /* NutritionalView.swift */,
-				538A8A3D2472D27D005BC7A1 /* NutritionalItemView.swift */,
 				538A8A412472E013005BC7A1 /* InstructionsView.swift */,
 			);
 			path = Recipe;
@@ -449,7 +443,6 @@
 			files = (
 				EC32EC0F29FF279200F13322 /* GoogleService-Info.plist in Sources */,
 				53F52A4A246ED28700EB600E /* RecipesViewModel.swift in Sources */,
-				538A8A3E2472D27D005BC7A1 /* NutritionalItemView.swift in Sources */,
 				532758D7246BF98E0013F639 /* ShoppingListView.swift in Sources */,
 				6E8A5C4C25D5819E00AA1C75 /* MockData.swift in Sources */,
 				53CD526B2473FD79002368D9 /* ImageLoaderView.swift in Sources */,
@@ -466,7 +459,6 @@
 				532758E3246C19F10013F639 /* FavoriteViewModel.swift in Sources */,
 				5306956F24694D8C0039AD41 /* AppDelegate.swift in Sources */,
 				531D4BAB258396C40073C2AF /* SearchView.swift in Sources */,
-				538A8A3C2472C8C4005BC7A1 /* NutritionalView.swift in Sources */,
 				A83B3FC229FA215800033DFB /* AccountModel.swift in Sources */,
 				538A8A442472E24F005BC7A1 /* RecipeIngredientsView.swift in Sources */,
 				53FE0D21246C4251007847C0 /* Keys.swift in Sources */,

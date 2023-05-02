@@ -51,10 +51,10 @@ struct AppView: View {
         if self.loggedIn == false{
             VStack{
                 Spacer()
-                Image("foodizone_logo")
+                Image("membership")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 200, height: 200)
+                    .frame(width: 350)
                 Text("Welcome to FoodiZone")
                     .font(.title)
                     .fontWeight(.semibold)

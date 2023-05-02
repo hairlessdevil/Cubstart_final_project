@@ -18,9 +18,9 @@ class SearchDataManager: ObservableObject {
     var originalRecipeList = [Recipe]()
     var originalAccountList = [Account]()
     
-    func setOriginalList(list:[Recipe]) {
-        self.originalRecipeList = list
-        self.recipeList = list
+    func setOriginalList(recipe: Recipe) {
+        self.originalRecipeList.append(recipe)
+        self.recipeList.append(recipe)
     }
     
     func setOriginalAccountList(list:[Account]) {

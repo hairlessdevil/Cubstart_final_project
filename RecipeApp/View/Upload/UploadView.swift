@@ -92,24 +92,8 @@ struct UploadView: View {
                             TextField(text: $instructions, prompt: Text("required")){}
                                 .textFieldStyle(.roundedBorder)
                         }
-                        HStack(spacing: 20){ //button for more/less instructions textfield
-                            Button("+"){}
-                                .buttonStyle(.bordered)
-                            Button("-"){}
-                                .buttonStyle(.bordered)
-                            Button("photo"){}
-                                .buttonStyle(.bordered)
-                        }
                     }
                     Group{
-                        HStack{
-                            Text("Cover Photo:")
-                            TextField(text: $cover_photo, prompt: Text("required")){}
-                                .textFieldStyle(.roundedBorder)
-//                            Button("upload here"){}
-//                                .buttonStyle(.bordered)
-                        }
-                        
                         HStack{
                             Text("author's comment:")
                             TextField(text: $comments, prompt: Text("required")){}
@@ -163,8 +147,9 @@ func create_recipe(db: Firestore, recipe_name: String, comments: String, image: 
     do{
         try db.collection("Recipes").document(id).setData(from: recipe)
     }catch let error{
-        print("Error")
+        print("Error: \(error)")
     }
+    SearchDataManager.shared.setOriginalList(recipe: recipe)
 }
 
 

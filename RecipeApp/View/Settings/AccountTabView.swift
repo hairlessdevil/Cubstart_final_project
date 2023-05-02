@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseCore
 
 struct AccountTabView: View {
     // MARK: - PROPERTIES
@@ -41,6 +43,7 @@ struct AccountTabView: View {
                         Text(String(accountViewModel.userData[0].recipeCount) + " Recipes")
                             .font(.system(.callout, design: .rounded))
                             .fontWeight(.medium)
+                        
                     }
                 }
                 .padding()

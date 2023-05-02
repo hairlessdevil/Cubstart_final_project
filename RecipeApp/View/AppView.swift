@@ -17,6 +17,8 @@ struct AppView: View {
     @State var password = ""
     @State var loggedIn = false
     @State var presentSheet = false
+    @State var signup_email = ""
+    @State var signup_password = ""
     //TODO: add a variable that tracks whether the user has successfully logged in or not
     
     init() {
@@ -28,9 +30,18 @@ struct AppView: View {
             if error != nil {
                 print(error?.localizedDescription ?? "")
             } else {
-//                TODO: update the variable to track that the user has successfully logged in
                 self.loggedIn = true
                 //print("success")
+            }
+        }
+    }
+    
+    func signup(email: String, password: String){
+        Auth.auth().createUser(withEmail: email, password: password){authResult,
+            error in
+            if let err = error{
+                print(err.localizedDescription)
+                return
             }
         }
     }
@@ -76,7 +87,28 @@ struct AppView: View {
                         .foregroundColor(.green)
                         .padding(.bottom, 20)
                 }.sheet(isPresented: $presentSheet){
-                    Text("try to create user")
+                    Text("Sign up for a new account")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                    VStack(spacing: 20) {
+                        TextField("Email", text: $signup_email)
+                            .padding()
+                            .background(Color(.systemGray6))
+                            .cornerRadius(10)
+                        SecureField("Password", text: $signup_password)
+                            .padding()
+                            .background(Color(.systemGray6))
+                            .cornerRadius(10)
+                        Button(action: { signup(email: signup_email, password: signup_password) }){
+                            Text("Sign up")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(width: 220, height: 60)
+                                .background(Color.green)
+                                .cornerRadius(15.0)
+                        }
+                    }
                 }
             }
         }

@@ -26,14 +26,14 @@ struct HomeView: View {
                     
                     // MARK: - CATEGORIES
                     
-                    if self.recipeListViewModel.dataEditorChoiceIsLoading {
-                        ActivityIndicator()
-                            .frame(width:30, height: 30)
-                            .foregroundColor(.orange)
-                            .opacity(self.recipeListViewModel.dataEditorChoiceIsLoading ? 1.0 : 0.0)
-                    } else {
-                         RecipeRowView(categoryName: "Editor's Choice", recipes: recipeListViewModel.editorRecipesData)
-                    }
+//                    if self.recipeListViewModel.dataEditorChoiceIsLoading {
+//                        ActivityIndicator()
+//                            .frame(width:30, height: 30)
+//                            .foregroundColor(.orange)
+//                            .opacity(self.recipeListViewModel.dataEditorChoiceIsLoading ? 1.0 : 0.0)
+//                    } else {
+//                         RecipeRowView(categoryName: "Editor's Choice", recipes: recipeListViewModel.editorRecipesData)
+//                    }
                     
                     
                     // MARK: - RECIPE CARDS
